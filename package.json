@@ -1,6 +1,6 @@
 {
   "name": "js-stack-from-scratch",
-  "version": "0.1",
+  "version": "0.1.1",
   "description": "Experimenting with the JS stack",
   "main": "index.js",
   "repository": "https://github.com/njriordan/js-stack-from-scratch.git",
@@ -8,12 +8,16 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-node src",
-    "test": "eslint src && flow && jest --coverage"
+    "test": "eslint src && flow && jest --coverage",
+    "precommit": "yarn test",
+    "prepush": "yarn test"
   },
   "browserslist": [
     "> 1%"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "husky": "^0.13.4"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
