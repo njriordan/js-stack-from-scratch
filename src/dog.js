@@ -3,7 +3,7 @@ class Dog {
     this.name = name
   }
 
-  bark () {
+  bark() {
     return `Woof woof, I am ${this.name}`
   }
 }
