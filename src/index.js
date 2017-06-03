@@ -1,3 +1,5 @@
-const str = "ES6"
+import Dog from './dog'
 
-console.log(`Hello ${str}`)
+const skip = new Dog('Skip')
+
+console.log(skip.bark())
