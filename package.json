@@ -1,0 +1,15 @@
+{
+  "name": "js-stack-from-scratch",
+  "version": "0.1",
+  "description": "Experimenting with the JS stack",
+  "main": "index.js",
+  "repository": "https://github.com/njriordan/js-stack-from-scratch.git",
+  "author": "Niall Riordan",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "color": "^1.0.3"
+  }
+}
