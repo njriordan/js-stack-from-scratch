@@ -7,7 +7,7 @@
   "author": "Niall Riordan",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src",
+    "start": "babel-node src/server",
     "test": "eslint src && flow && jest --coverage",
     "precommit": "yarn test",
     "prepush": "yarn test"
@@ -16,6 +16,9 @@
     "> 1%"
   ],
   "dependencies": {
+    "common-tags": "^1.4.0",
+    "compression": "^1.6.2",
+    "express": "^4.15.3",
     "husky": "^0.13.4"
   },
   "devDependencies": {
