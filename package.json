@@ -7,15 +7,22 @@
   "author": "Niall Riordan",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src",
+    "start": "yarn dev:start",
+    "dev:start": "nodemon --ignore lib --exec babel-node src/server",
+    "prod:build": "rimraf lib && babel src -d lib --ignore .test.js",
+    "prod:start": "cross-env NODE_ENV=production pm2 start lib/server && pm2 logs",
+    "prod:stop": "pm2 delete server",
     "test": "eslint src && flow && jest --coverage",
     "precommit": "yarn test",
-    "prepush": "yarn test"
+    "prepush": "yarn test && yarn prod:build"
   },
   "browserslist": [
     "> 1%"
   ],
   "dependencies": {
+    "common-tags": "^1.4.0",
+    "compression": "^1.6.2",
+    "express": "^4.15.3",
     "husky": "^0.13.4"
   },
   "devDependencies": {
@@ -24,6 +31,7 @@
     "babel-jest": "^20.0.3",
     "babel-preset-env": "^1.5.1",
     "babel-preset-flow": "^6.23.0",
+    "cross-env": "^5.0.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-compat": "^1.0.3",
@@ -32,6 +40,9 @@
     "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-react": "^7.0.1",
     "flow-bin": "^0.47.0",
-    "jest": "^20.0.4"
+    "jest": "^20.0.4",
+    "nodemon": "^1.11.0",
+    "pm2": "^2.4.6",
+    "rimraf": "^2.6.1"
   }
 }
