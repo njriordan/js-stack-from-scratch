@@ -28,7 +28,8 @@
     "express": "^4.15.3",
     "husky": "^0.13.4",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-hot-loader": "next"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
