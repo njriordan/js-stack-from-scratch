@@ -27,6 +27,7 @@
     "compression": "^1.6.2",
     "express": "^4.15.3",
     "husky": "^0.13.4",
+    "immutable": "4.0.0-rc.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-hot-loader": "next"
