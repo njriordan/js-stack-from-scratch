@@ -27,9 +27,15 @@
     "compression": "^1.6.2",
     "express": "^4.15.3",
     "husky": "^0.13.4",
+    "immutable": "4.0.0-rc.2",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-hot-loader": "next"
+    "react-hot-loader": "next",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
+    "redux-actions": "^2.0.3",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -49,10 +55,12 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-react": "^7.0.1",
+    "fetch-mock": "^5.11.0",
     "flow-bin": "^0.47.0",
     "jest": "^20.0.4",
     "nodemon": "^1.11.0",
     "pm2": "^2.4.6",
+    "redux-mock-store": "^1.2.3",
     "rimraf": "^2.6.1",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
