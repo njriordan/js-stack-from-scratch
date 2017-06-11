@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 })
 
 app.get(helloEndpointRoute(), (req, res) => {
-  res.json({ serverMessage: `Hello from the server! (recieved ${req.params.num})` })
+  res.json({ serverMessage: `Hello from the server! (received ${req.params.num})` })
 })
 
 app.listen(WEB_PORT, () => {
