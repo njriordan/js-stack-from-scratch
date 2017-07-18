@@ -28,7 +28,7 @@ const HomePage = ({ classes }: { classes: Object }) => (
   <div>
     <Helmet
       meta={[
-        { name: 'description', content: 'This is an app to say hello' },
+        { name: 'description', content: 'This is an app to say hello. Changed to check if heroku is working.' },
         { property: 'og:title', content: APP_NAME },
       ]}
     />
